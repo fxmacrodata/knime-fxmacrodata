@@ -1,0 +1,1 @@
+"""FXMacroData KNIME node extension."""

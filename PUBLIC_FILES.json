@@ -1,0 +1,23 @@
+[
+  "CHANGELOG.md",
+  "LICENSE.TXT",
+  "OPERATIONS.md",
+  "PUBLIC_FILES.json",
+  "README.md",
+  "icons/fxmacrodata-category.png",
+  "icons/fxmacrodata.png",
+  "knime.yml",
+  "pixi.lock",
+  "pixi.toml",
+  "pytest.ini",
+  "ruff.toml",
+  "scripts/operation_matrix.py",
+  "scripts/package.py",
+  "src/__init__.py",
+  "src/extension.py",
+  "src/response_safety.py",
+  "src/tables.py",
+  "tests/conftest.py",
+  "tests/test_nodes.py",
+  "tests/test_package.py"
+]

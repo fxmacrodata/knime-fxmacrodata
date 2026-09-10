@@ -1,0 +1,38 @@
+[workspace]
+name = "knime-fxmacrodata"
+version = "0.1.0"
+channels = ["knime", "conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[dependencies]
+python = "3.13.*"
+knime-extension = "5.12.*"
+knime-python-base = "5.12.*"
+knime-python-versions = "5.12.*"
+pandas = ">=2.2,<3"
+jsonschema = ">=4.23,<5"
+requests = ">=2.32,<3"
+
+[pypi-dependencies]
+fxmacrodata-public-client = { url = "https://github.com/fxmacrodata/fxmacrodata-public-client/releases/download/v0.1.0/fxmacrodata_public_client-0.1.0-py3-none-any.whl#sha256=5c60ff217243ff4001f178d4fdd8c3c8ce29001ad1ea0a170ed96606f0dd07c8" }
+
+[feature.test.dependencies]
+pytest = ">=9,<10"
+ruff = ">=0.11"
+pyyaml = ">=6"
+
+[feature.test.tasks]
+test = "python -m pytest -c pytest.ini"
+lint = "ruff check src tests scripts"
+
+[feature.build.dependencies]
+python = "3.11.*"
+knime-extension-bundling = "5.12.*"
+
+[feature.build.tasks]
+build = { args = [{ arg = "dest", default = "./build" }], cmd = "python scripts/package.py {{ dest }} --bundle" }
+
+[environments]
+default = []
+test = ["test"]
+build = { features = ["build"], no-default-feature = true }

@@ -1,0 +1,12 @@
+name: fxmacrodata
+group_id: com.fxmacrodata.knime
+description: FXMacroData
+long_description: >-
+  Macroeconomic indicators, release calendars, FX and related datasets as KNIME tables.
+  Start with public USD data without an API key. Learn more at https://fxmacrodata.com.
+version: 0.1.0
+author: Robert Tidball
+vendor: FXMacroData
+license_file: LICENSE.TXT
+pixi_toml_path: pixi.toml
+extension_module: ./src/extension
