@@ -1,6 +1,10 @@
 # FXMacroData for KNIME
 
-Use macroeconomic indicators, release calendars, FX rates and related datasets in KNIME workflows. Public USD catalogue, indicator history and release-calendar access need no API key, account or credit card.
+Bring your FXMacroData subscription into KNIME workflows to compare covered currencies, analyse full available macroeconomic histories, and combine release calendars, FX rates and related datasets. Native tables connect directly to KNIME filtering, joining, charting and forecasting nodes.
+
+**[Subscribe to FXMacroData](https://fxmacrodata.com/subscribe?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=knime_subscribe)** for access to covered non-USD datasets and full available history.
+
+Evaluate the extension before subscribing with public USD catalogue, recent indicator history and release-calendar access, which require no API key or account.
 
 [FXMacroData](https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=knime_readme) · [API documentation](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=knime_docs) · [Complete node reference](OPERATIONS.md)
 
@@ -21,7 +25,7 @@ In KNIME, choose **File → Install KNIME Extensions → Available Software Site
 
 The package has 72 data/API tool nodes and an offline **FXMacroData Operations** discovery node under **Community → FXMacroData**. No notebook or Python Scripting node is needed to use them.
 
-## Start with public USD data
+## Evaluate with public USD data
 
 1. Add **Data Catalogue** from **FXMacroData → Data API**. Keep currency `USD` and credential `__public_usd__`, then execute it.
 2. Inspect its **Records** output to choose an indicator from the catalogue.
@@ -30,9 +34,9 @@ The package has 72 data/API tool nodes and an offline **FXMacroData Operations**
 
 Every REST operation and MCP tool has its own native dialog, including FX, reference rates, financial prices, rate curves/differentials, positioning, commodities, factors, risk sentiment, predictions, press releases, seasonality, visual artifacts and research tools. Use **FXMacroData Operations** to browse all names and their original schemas.
 
-## Optional credentials
+## Connect your subscription
 
-For a protected dataset, create a **KNIME workflow credential** using KNIME's credentials configuration. Put your FXMacroData API key in its **password** field; its username is unused. Make that credential available to the node through KNIME's normal flow-variable connection and select its identifier in **KNIME credential**.
+To connect your subscription, create a **KNIME workflow credential** using KNIME's credentials configuration. Put your FXMacroData API key in its **password** field; its username is unused. Make that credential available to the node through KNIME's normal flow-variable connection and select its identifier in **KNIME credential**.
 
 Only the identifier is saved in this extension's node settings. The password is resolved during execution and is not written to output tables, flow variables or node logs. `__public_usd__` explicitly disables authentication, including keys from the process environment. Do not paste keys into ordinary parameter fields or exported workflow text. Follow KNIME's credential-export controls when sharing workflows.
 
