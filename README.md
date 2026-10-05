@@ -2,11 +2,11 @@
 
 Bring your FXMacroData subscription into KNIME workflows to compare covered currencies, analyse full available macroeconomic histories, and combine release calendars, FX rates and related datasets. Native tables connect directly to KNIME filtering, joining, charting and forecasting nodes.
 
-**[Subscribe to FXMacroData](https://fxmacrodata.com/subscribe?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=knime_subscribe)** for access to covered non-USD datasets and full available history.
+**[Subscribe to FXMacroData](https://fxmacrodata.com/subscribe?utm_source=github&utm_medium=referral&utm_campaign=knime-fxmacrodata&utm_content=subscribe)** for access to covered non-USD datasets and full available history.
 
 Evaluate the extension before subscribing with public USD catalogue, recent indicator history and release-calendar access, which require no API key or account.
 
-[FXMacroData](https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=knime_readme) · [API documentation](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=open_source_integrations&utm_content=knime_docs) · [Complete node reference](OPERATIONS.md)
+[FXMacroData](https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=knime-fxmacrodata&utm_content=readme) · [API documentation](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=knime-fxmacrodata&utm_content=docs) · [Complete node reference](OPERATIONS.md)
 
 ## Install
 
