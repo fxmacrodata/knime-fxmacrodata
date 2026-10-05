@@ -237,7 +237,7 @@ class OperationCatalogue:
 
     Filter the table by operation, protocol or description to find a node, then
     search its name in KNIME's node repository. Each operation has its own native
-    configuration dialog. [FXMacroData](https://fxmacrodata.com/?utm_source=knime&utm_medium=integration&utm_campaign=open_source_integrations&utm_content=app) provides public
+    configuration dialog. [FXMacroData](https://fxmacrodata.com/?utm_source=knime&utm_medium=integration&utm_campaign=knime-fxmacrodata&utm_content=app) provides public
     USD catalogue, history and release-calendar access without an API key.
     """
 

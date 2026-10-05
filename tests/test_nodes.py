@@ -141,7 +141,7 @@ def test_every_native_node_executes_real_client_and_returns_typed_tables(operati
         assert link.scheme == "https" and link.hostname == "fxmacrodata.com" and link.path == path
         assert parse_qs(link.query) == {
             "utm_source": ["knime"], "utm_medium": ["integration"],
-            "utm_campaign": ["open_source_integrations"], "utm_content": [content],
+            "utm_campaign": ["knime-fxmacrodata"], "utm_content": [content],
         }
     assert "utm_" not in metadata["source_url"]
     assert metadata["record_count"] == records.num_rows
@@ -242,7 +242,7 @@ def test_operation_catalogue_has_all_schemas_and_matches_configure():
     for field in ("website_url", "documentation_url"):
         query = parse_qs(urlsplit(table.to_pandas()[field].iloc[0]).query)
         assert query["utm_source"] == ["knime"] and query["utm_medium"] == ["integration"]
-        assert query["utm_campaign"] == ["open_source_integrations"]
+        assert query["utm_campaign"] == ["knime-fxmacrodata"]
     assert context.reads == []
 
 
@@ -253,7 +253,7 @@ def test_registered_node_and_category_backlinks_have_runtime_attribution():
     descriptions.append(category["description"])
     for description in descriptions:
         assert "https://fxmacrodata.com/?utm_source=knime&utm_medium=integration" in description
-        assert "utm_campaign=open_source_integrations&utm_content=app" in description
+        assert "utm_campaign=knime-fxmacrodata&utm_content=app" in description
 
 
 def test_table_projection_preserves_types_missing_values_nested_json_and_large_integers():

@@ -8,8 +8,8 @@ from typing import Any
 import pandas as pd
 from fxmacrodata_public import Result
 
-WEBSITE = "https://fxmacrodata.com/?utm_source=knime&utm_medium=integration&utm_campaign=open_source_integrations&utm_content=app"
-DOCUMENTATION = "https://fxmacrodata.com/documentation/reference?utm_source=knime&utm_medium=integration&utm_campaign=open_source_integrations&utm_content=docs"
+WEBSITE = "https://fxmacrodata.com/?utm_source=knime&utm_medium=integration&utm_campaign=knime-fxmacrodata&utm_content=app"
+DOCUMENTATION = "https://fxmacrodata.com/documentation/reference?utm_source=knime&utm_medium=integration&utm_campaign=knime-fxmacrodata&utm_content=docs"
 
 
 def json_text(value: Any) -> str:
