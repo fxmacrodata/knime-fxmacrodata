@@ -65,4 +65,4 @@ Tests use KNIME's official Python testing backend and synthetic HTTP/MCP fixture
 
 ## License
 
-The adapter is MIT licensed. Third-party dependencies retain their own licenses. This software license does not grant rights to redistribute API datasets or to the FXMacroData or KNIME trademarks. See [FXMacroData](https://fxmacrodata.com) for data access and licensing information.
+The adapter is MIT licensed. Third-party dependencies retain their own licenses. This software license does not grant rights to redistribute API datasets or to the FXMacroData or KNIME trademarks. See [FXMacroData](https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=knime-fxmacrodata&utm_content=readme) for data access and licensing information.

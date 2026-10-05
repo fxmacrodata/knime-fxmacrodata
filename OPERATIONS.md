@@ -8,7 +8,7 @@ The complete response preserves the API's original fields and nesting. Records u
 
 Inventory: 72 operations (23 REST, 49 MCP), plus the offline FXMacroData Operations discovery node.
 
-[FXMacroData](https://fxmacrodata.com) · [API reference](https://fxmacrodata.com/documentation/reference) · [MCP documentation](https://fxmacrodata.com/documentation/mcp-server)
+[FXMacroData](https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=knime-fxmacrodata&utm_content=operations) · [API reference](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=knime-fxmacrodata&utm_content=operations) · [MCP documentation](https://fxmacrodata.com/documentation/mcp-server?utm_source=github&utm_medium=referral&utm_campaign=knime-fxmacrodata&utm_content=operations)
 
 | Operation / stable node ID | Native node name | Protocol | Inputs (required marked *) |
 | --- | --- | --- | --- |
